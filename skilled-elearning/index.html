@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+       
+        extend: {
+          backgroundImage: {
+            'hero': "url('assets/image-hero-mobile@2x.png')",
+            'hero-sm': "url('assets/image-hero-tablet@2x.png')",
+            'hero-lg': "url('assets/image-hero-desktop@2x.png')"
+          },
+          
+
+          fontFamily: {
+            'sans': ['Plus Jakarta Sans'],
+          },
+          boxShadow: {
+            design: '0px 25px 50px rgba(6, 22, 141, 0.0442381);'
+          },
+          colors: {
+            grayishblue: 'hsl(234, 25%, 52%)',
+            darkblue: 'hsl(233, 54%, 16%)',
+            lightgray: 'hsl(232, 10%, 56%)',
+            darkpink: 'hsl(341, 92%, 62%)',
+            lightpink: 'hsl(341, 100%, 83%)',
+            white: 'hsl(0, 0%, 100%)',
+
+
+            gradientorange2: 'hsl(322, 87%, 55%)',
+            gradientorange1: 'hsl(13, 100%, 64%)',
+            'gradient3-1': 'hsl(237, 100%, 64%)',
+            'gradient3-2': 'hsl(322, 87%, 55%)',
+            gradientgray: '#F0F1FF'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-white flex   flex-col  bg-contain  h-screen sm:bg-hero-sm lg:bg-hero-lg sm:bg-[right_-16rem_top_-4rem] lg:bg-[right_-20rem_top_-12rem] sm:bg-[length:640px_640px] lg:bg-[length:991px_936px] bg-no-repeat " >
+    <header class="flex mb-10 sm:mb-24 lg:mb-48 justify-between px-4 sm:px-10 lg:px-40 pt-6 items-center z-10">
+      <div>
+        <img src="assets/logo-dark.svg" />
+      </div>
+      <div>
+        <button class="bg-darkblue hover:bg-grayishblue text-white text-base font-bold px-6 py-2.5 rounded-full">Get Started</button>
+      </div>
+    </header>
+    <main class="mb-auto  ">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:w-3/4 px-4 sm:px-10  lg:px-40 sm:mb-48 lg:mb-56">
+        <div class="mb-10 ">
+          <h1 class="text-darkblue text-[40px] font-extrabold leading-[3.15rem] mb-7">Maximize skill, minimize budget</h1>
+          <div class="text-base text-lightgray font-medium mb-7">Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</div>
+          <button class="font-bold text-white bg-gradient-to-b from-gradientorange1 to-gradientorange2 hover:opacity-50 py-4 px-10 rounded-full">Get Started</button>
+        </div>
+        <div class="sm:hidden">
+          <img src="/assets/image-hero-mobile@2x.png">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 sm:gap-y-20 sm:gap-x-3 lg:gap-x-8 bg-gradient-to-b from-white to-gradientgray px-4 sm:px-10  lg:px-40 pb-36">
+        <div class="bg-gradient-to-b from-gradientorange1 to-gradientorange2 rounded-xl pb-10 pt-6 sm:pt-14 px-7 sm:px-8">
+          <span class="text-white font-extrabold text-2xl" >Check out our most popular courses!</span>
+        </div>
+
+        <div class="relative bg-white rounded-xl px-7 sm:px-8 pt-14 pb-10 shadow-design">
+          <img class="absolute -top-7" src="assets/icon-animation.svg"/>
+          <h2 class="font-extrabold mb-4">Automation</h2>
+          <span class="block text-lightgray mb-6">Learn the latest animation techniques to create stunning motion design and captivate your audience.</span>
+          <button class="text-lightpink font-bold text-lg">Get Started</button>
+        </div>
+
+        <div class="relative bg-white rounded-xl px-7 sm:px-8 pt-14 pb-10 shadow-design">
+          <img class="absolute -top-7" src="assets/icon-design.svg"/>
+          <h2 class="font-extrabold mb-4">Design</h2>
+          <span class="block text-lightgray mb-6">Create beautiful, usable interfaces to help shape the future of how the web looks.</span>
+          <button class="text-lightpink font-bold text-lg">Get Started</button>
+        </div>
+
+        <div class="relative bg-white rounded-xl px-7 sm:px-8 pt-14 pb-10 shadow-design">
+          <img class="absolute -top-7" src="assets/icon-photography.svg"/>
+          <h2 class="font-extrabold mb-4">Photography</h2>
+          <span class="block text-lightgray mb-6">Explore critical fundamentals like lighting, composition, and focus to capture exceptional photos.</span>
+          <button class="text-lightpink font-bold text-lg">Get Started</button>
+        </div>
+
+        <div class="relative bg-white rounded-xl px-7 sm:px-8 pt-14 pb-10 shadow-design">
+          <img class="absolute -top-7" src="assets/icon-crypto.svg"/>
+          <h2 class="font-extrabold mb-4">Crypto</h2>
+          <span class="block text-lightgray mb-6">All you need to know to get started investing in crypto. Go from beginner to advanced with this 54 hour course.</span>
+          <button class="text-lightpink font-bold text-lg">Get Started</button>
+        </div>
+
+        <div class="relative bg-white rounded-xl px-7 sm:px-8 pt-14 pb-10 shadow-design">
+          <img class="absolute -top-7" src="assets/icon-business.svg"/>
+          <h2 class="font-extrabold mb-4">Business</h2>
+          <span class="block text-lightgray mb-6">A step-by-step playbook to help you start, scale, and sustain your business without outside investment.</span>
+          <button class="text-lightpink font-bold text-lg">Get Started</button>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-darkblue ">
+      <div class="px-4 sm:px-10 lg:px-40 py-9 justify-between flex items-center">
+        <div>
+          <img class="" src="assets/logo-light.svg" />
+        </div>
+        <div>
+          <button class="bg-gradient-to-b from-gradient3-1 to-gradient3-2 hover:opacity-50 text-white text-base font-bold px-6 py-2.5 rounded-full">Get Started</button>
+        </div>
+      </div>
+    </footer>
+
+</body>
+</html>
